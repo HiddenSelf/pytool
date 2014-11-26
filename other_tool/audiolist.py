@@ -27,8 +27,6 @@ def crerandomaudiolist():
         for f in files:
             _files.append(os.path.join(root, f+"\r\n"))
 
-    print _files
-    print len(_files)
     with open(os.path.join(path, "audio.list"), "ab") as of:
         for i in random.sample(range(0, len(_files)-1), len(_files)):
             of.write(_files[i])
