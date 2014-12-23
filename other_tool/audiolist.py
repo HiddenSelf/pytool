@@ -19,7 +19,8 @@ __author__ = 'Edison'
 import os
 import random
 
-path = "/Users/Edison/Music/Audios"
+# path = "/Users/Edison/Music/Audios"
+path = r"/Users/Edison/Music/30year"
 
 def crerandomaudiolist():
     _files = []
@@ -27,7 +28,7 @@ def crerandomaudiolist():
         for f in files:
             _files.append(os.path.join(root, f+"\r\n"))
 
-    with open(os.path.join(path, "audio.list"), "ab") as of:
+    with open(os.path.join(path, "audio.list"), "wb+") as of:
         # for i in random.sample(range(0, len(_files)), len(_files)):   ## V1.0
         # of.write(_files[i])
 
