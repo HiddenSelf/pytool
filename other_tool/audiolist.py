@@ -19,8 +19,8 @@ __author__ = 'Edison'
 import os
 import random
 
-# path = "/Users/Edison/Music/Audios"
-path = r"/Users/Edison/Music/30year"
+path = "/Users/Edison/Music/Audios"
+# path = r"/Users/Edison/Music/30year"
 
 def crerandomaudiolist():
     _files = []
